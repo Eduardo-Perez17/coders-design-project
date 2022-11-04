@@ -1,7 +1,27 @@
+.none {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-nav {
+  display: grid;
+  justify-content: end;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #02030f;
+  color: #fff;
 }
 
 .grid-father {

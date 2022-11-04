@@ -1,7 +1,21 @@
+@mixin mainAlign($justify, $align) {
+  display: grid;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@import '_header';
+@import '_variables';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $bgColorPrimary;
+  color: $colorText;
 }
 
 .grid-father {

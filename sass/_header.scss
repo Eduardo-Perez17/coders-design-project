@@ -1,0 +1,12 @@
+.none {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-nav {
+  @include mainAlign(end, center);
+}
