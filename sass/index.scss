@@ -4,8 +4,14 @@
   align-items: $align;
 }
 
-@import '_header';
+@mixin mainColumn($column) {
+  display: grid;
+  grid-template-columns: $column;
+}
+
 @import '_variables';
+@import '_header';
+@import '_header-article';
 
 * {
   margin: 0;
@@ -14,13 +20,13 @@
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: $bgColorPrimary;
   color: $colorText;
 }
 
 .grid-father {
-  display: grid;
-  grid-template-columns: 30px 1fr 30px;
+  @include mainColumn(30px 1fr 30px);
 }
 
 .grid-son {
