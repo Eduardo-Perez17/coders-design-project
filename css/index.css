@@ -49,6 +49,71 @@ nav ul li a {
   padding-top: 150px;
 }
 
+.aside__father {
+  margin: 60px 0;
+}
+
+aside {
+  text-align: center;
+  display: grid;
+  gap: 100px;
+}
+
+aside h2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+aside h2::after {
+  content: "";
+  width: 150px;
+  height: 5px;
+  background-color: #5f40f5;
+  border-radius: 20px;
+}
+
+.aside__card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.aside__card--img {
+  max-width: 100%;
+}
+
+.aside__card h3 {
+  color: #3086fa;
+}
+
+.aside__card--more-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside__card--more-info a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.icon__more--info {
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .aside__card--more-info:hover .icon__more--info {
+    transform: translateX(10px);
+  }
+  .aside__card--more-info a:hover {
+    color: #ccc;
+  }
+}
 * {
   margin: 0;
   padding: 0;
