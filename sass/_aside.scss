@@ -8,21 +8,8 @@ aside {
   gap: 100px;
 }
 
-aside h2 {
-  @include mainAlign(center, center);
-  grid-gap: 10px;
-}
-
-aside h2::after {
-  content: '';
-  width: 150px;
-  height: 5px;
-  background-color: #5f40f5;
-  border-radius: 20px;
-}
-
 .aside__card {
-  @include mainAlign(center, center);
+  @include mainAlign(grid, center, center);
   gap: 20px;
 }
 
@@ -35,9 +22,7 @@ aside h2::after {
 }
 
 .aside__card--more-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mainAlign(flex, center, center);
 }
 
 .aside__card--more-info a {

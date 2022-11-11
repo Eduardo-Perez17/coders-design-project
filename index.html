@@ -10,7 +10,7 @@
     <title>Coders Design - Agencia de desarrollo web</title>
   </head>
   <body>
-    <div class="grid-father header__father">
+    <div class="grid-father header__father" id="initial">
       <div class="grid-son header__son">
         <header>
           <div class="logo">
@@ -22,9 +22,9 @@
             </div>
             <nav id="nav" class="none">
               <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Proyectos</a></li>
+                <li><a href="#initial">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#proyect">Proyectos</a></li>
                 <li><a href="#">Preguntas Frecuentes</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
@@ -34,21 +34,13 @@
       </div>
     </div>
 
-    <!-- <div class="stars-container">
-      <span class="star star1"></span>
-      <span class="star star2"></span>
-      <span class="star star3"></span>
-      <span class="star star4"></span>
-      <span class="star star5"></span>
-      <span class="star star6"></span>
-    </div> -->
     <div class="grid-father header__article--father">
       <div class="grid-son header__article--son">
         <div class="header__article"></div>
       </div>
     </div>
 
-    <div class="grid-father aside__father">
+    <div class="grid-father aside__father" id="services">
       <div class="grid-son aside__son">
         <aside>
           <h2>Servicios</h2>
@@ -78,10 +70,72 @@
             <p>Mantenimiento para tu página web y la renovación con la mejor optimización y rendimiento para tu web.</p>
             <div class="aside__card--more-info">
               <a href="#">SABER MÁS</a>
-              <img src="./public/img/aside/aside_more_info.png" alt="" class="icon__more--info" />
+              <img src="./public/img/aside/aside_more_info.png" alt="aside_more_info" class="icon__more--info" />
             </div>
           </div>
         </aside>
+      </div>
+    </div>
+
+    <div class="grid-father skills-father" id="proyect">
+      <div class="grid-son skills-son">
+        <h2>Habilidades</h2>
+
+        <div class="main__skills--card-learned">
+          <h3>Habilidades adquiridas</h3>
+          <div class="skills__card">
+            <img src="./public/img/skills/html-5.png" alt="" />
+            <p>HTML 5</p>
+          </div>
+
+          <div class="skills__card">
+            <img src="./public/img/skills/css-3.png" alt="" />
+            <p>CSS 3</p>
+          </div>
+
+          <div class="skills__card">
+            <img src="./public/img/skills/sass.png" alt="" />
+            <p>Sass</p>
+          </div>
+
+          <div class="skills__card">
+            <img src="./public/img/skills/js.png" alt="" />
+            <p>JavaScript</p>
+          </div>
+
+          <div class="skills__card">
+            <img src="./public/img/skills/git.png" alt="" />
+            <p>Git</p>
+          </div>
+
+          <div class="skills__card">
+            <img src="./public/img/skills/react.png" alt="" />
+            <p>React JS</p>
+          </div>
+
+          <div class="skills__card py">
+            <img src="./public/img/skills/python.png" alt="" />
+            <p>Python 3</p>
+          </div>
+        </div>
+
+        <div class="main__skills--card-learning">
+          <h3>Habilidades por adquirir</h3>
+          <div class="skills__card">
+            <img src="./public/img/skills/typescript.png" alt="" />
+            <p>Typescript</p>
+          </div>
+
+          <div class="skills__card">
+            <img src="./public/img/skills/node.png" alt="" />
+            <p>Node.js</p>
+          </div>
+
+          <div class="skills__card">
+            <img src="./public/img/skills/blockchain.png" alt="" />
+            <p>Web 3.0</p>
+          </div>
+        </div>
       </div>
     </div>
 

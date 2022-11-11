@@ -59,21 +59,6 @@ aside {
   gap: 100px;
 }
 
-aside h2 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 10px;
-}
-
-aside h2::after {
-  content: "";
-  width: 150px;
-  height: 5px;
-  background-color: #5f40f5;
-  border-radius: 20px;
-}
-
 .aside__card {
   display: grid;
   justify-content: center;
@@ -114,6 +99,43 @@ aside h2::after {
     color: #ccc;
   }
 }
+.skills-father {
+  margin: 100px 0;
+}
+
+.skills-son {
+  text-align: center;
+}
+
+.main__skills--card-learned,
+.main__skills--card-learning {
+  margin: 60px 0;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.skills__card {
+  padding: 13px 17px;
+  border-radius: 8px;
+  border: 3px solid #1d1d26;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.skills__card p {
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .skills__card:hover {
+    border: 3px solid #5f40f5;
+    transform: scale(1.01);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -124,6 +146,21 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #02030f;
   color: #fff;
+}
+
+h2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+h2::after {
+  content: "";
+  width: 150px;
+  height: 5px;
+  background-color: #5f40f5;
+  border-radius: 20px;
 }
 
 .grid-father {

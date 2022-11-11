@@ -9,7 +9,7 @@ header {
 }
 
 .main-nav {
-  @include mainAlign(end, center);
+  @include mainAlign(grid, end, center);
 }
 
 .none {
@@ -29,7 +29,7 @@ nav ul {
   margin: 100px 0;
   list-style: none;
   text-align: center;
-  @include mainAlign(center, center);
+  @include mainAlign(grid, center, center);
   gap: 30px;
 }
 
