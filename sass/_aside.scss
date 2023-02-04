@@ -9,8 +9,13 @@ aside {
 }
 
 .aside__card {
-  @include mainAlign(grid, center, center);
   gap: 20px;
+  @include mainAlign(grid, center, center);
+}
+
+.aside__main--card {
+  display: grid;
+  grid-gap: 60px;
 }
 
 .aside__card--img {
@@ -43,5 +48,33 @@ aside {
 
   .aside__card--more-info a:hover {
     color: #ccc;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .aside__card--img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 886px) {
+  .aside__main--card {
+    @include containerGrid(1);
+  }
+}
+
+@media screen and (min-width: 887px) {
+  .aside__card {
+    width: 330px;
+  }
+
+  .aside__main--card {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }

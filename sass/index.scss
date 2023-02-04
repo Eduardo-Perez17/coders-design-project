@@ -1,19 +1,10 @@
-@mixin mainAlign($display, $justify, $align) {
-  display: $display;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-@mixin mainColumn($column) {
-  display: grid;
-  grid-template-columns: $column;
-}
-
 @import '_variables';
+@import '_mixins';
 @import '_header';
 @import '_header-article';
-@import '_aside.scss';
+@import '_aside';
 @import '_skills';
+@import '_proyect';
 
 * {
   margin: 0;
@@ -28,8 +19,8 @@ body {
 }
 
 h2 {
-  @include mainAlign(grid, center, center);
   grid-gap: 10px;
+  @include mainAlign(grid, center, center);
 }
 
 h2::after {
@@ -47,4 +38,34 @@ h2::after {
 .grid-son {
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .grid-father {
+    @include mainColumn(60px 1fr 60px);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid-father {
+    @include mainColumn(100px 1fr 100px);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .grid-father {
+    @include mainColumn(130px 1fr 130px);
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .grid-father {
+    @include mainColumn(160px 1fr 160px);
+  }
+}
+
+@media screen and (min-width: 2561px) {
+  .grid-father {
+    @include mainColumn(200px 1fr 200px);
+  }
 }

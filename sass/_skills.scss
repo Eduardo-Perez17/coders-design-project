@@ -9,7 +9,13 @@
 .main__skills--card-learned,
 .main__skills--card-learning {
   margin: 60px 0;
+}
+
+.skill {
+  margin-top: 30px;
   grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
   @include mainColumn(repeat(1, 1fr));
 }
 
@@ -30,5 +36,39 @@
   .skills__card:hover {
     border: 3px solid $colorSecondary;
     transform: scale(1.01);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main__skills--card-learned,
+  .main__skills--card-learning {
+    margin: 80px 0;
+  }
+
+  .skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .main__skills--card-learned,
+  .main__skills--card-learning {
+    margin: 80px 0;
+  }
+  .skill {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .main__skills--card-learned,
+  .main__skills--card-learning {
+    margin: 100px 0;
+  }
+  .skill {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

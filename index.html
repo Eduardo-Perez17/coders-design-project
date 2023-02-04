@@ -20,11 +20,12 @@
             <div class="nav-img" id="nav-mobile">
               <img src="./public/img/header/menu.png" alt="logo-coders-sure" class="nav-img-item" />
             </div>
-            <nav id="nav" class="none">
+            <nav id="nav" class="none menu-desktop">
               <ul>
                 <li><a href="#initial">Inicio</a></li>
                 <li><a href="#services">Servicios</a></li>
-                <li><a href="#proyect">Proyectos</a></li>
+                <li><a href="#project">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#">Preguntas Frecuentes</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
@@ -44,46 +45,87 @@
       <div class="grid-son aside__son">
         <aside>
           <h2>Servicios</h2>
-          <div class="aside__card">
-            <img src="./public/img/aside/aside_desarrollo_frontend.svg" alt="aside_desarrollo_frontend" class="aside__card--img" />
-            <h3>Desarrollo Frontend</h3>
-            <p>Creación y maquetación de una página web dinámica y responsiva en el lado del cliente.</p>
-            <div class="aside__card--more-info">
-              <a href="#">SABER MÁS</a>
-              <img src="./public/img/aside/aside_more_info.png" alt="" class="icon__more--info" />
-            </div>
-          </div>
 
-          <div class="aside__card">
-            <img src="./public/img/aside/diseno_ui_ux.svg" alt="diseno_ui_ux" class="aside__card--img" />
-            <h3>Diseño UI / UX</h3>
-            <p>Diseño web con la experiencia de usuario e interfaz óptima que tengas en mente para tu proyecto.</p>
-            <div class="aside__card--more-info">
-              <a href="#">SABER MÁS</a>
-              <img src="./public/img/aside/aside_more_info.png" alt="" class="icon__more--info" />
+          <div class="aside__main--card">
+            <div class="aside__card">
+              <img src="./public/img/aside/aside_desarrollo_frontend.svg" alt="aside_desarrollo_frontend" class="aside__card--img" />
+              <h3>Desarrollo Frontend</h3>
+              <p>Creación y maquetación de una página web dinámica y responsiva en el lado del cliente.</p>
+              <div class="aside__card--more-info">
+                <a href="#">SABER MÁS</a>
+                <img src="./public/img/aside/aside_more_info.png" alt="" class="icon__more--info" />
+              </div>
             </div>
-          </div>
 
-          <div class="aside__card">
-            <img src="./public/img/aside/aside_mantenimiento_web.svg" alt="aside_mantenimiento_web" class="aside__card--img" />
-            <h3>Mantenimiento Web</h3>
-            <p>Mantenimiento para tu página web y la renovación con la mejor optimización y rendimiento para tu web.</p>
-            <div class="aside__card--more-info">
-              <a href="#">SABER MÁS</a>
-              <img src="./public/img/aside/aside_more_info.png" alt="aside_more_info" class="icon__more--info" />
+            <div class="aside__card">
+              <img src="./public/img/aside/diseno_ui_ux.svg" alt="diseno_ui_ux" class="aside__card--img" />
+              <h3>Diseño UI / UX</h3>
+              <p>Diseño web con la experiencia de usuario e interfaz óptima que tengas en mente para tu proyecto.</p>
+              <div class="aside__card--more-info">
+                <a href="#">SABER MÁS</a>
+                <img src="./public/img/aside/aside_more_info.png" alt="" class="icon__more--info" />
+              </div>
             </div>
+
+            <div class="aside__card">
+              <img src="./public/img/aside/aside_mantenimiento_web.svg" alt="aside_mantenimiento_web" class="aside__card--img" />
+              <h3>Mantenimiento Web</h3>
+              <p>Optimización, rendimiento y la mejor renovación para su página web.</p>
+              <div class="aside__card--more-info">
+                <a href="#">SABER MÁS</a>
+                <img src="./public/img/aside/aside_more_info.png" alt="aside_more_info" class="icon__more--info" />
+              </div>
+            </div>
+
           </div>
         </aside>
       </div>
     </div>
 
-    <div class="grid-father skills-father" id="proyect">
+    <div class="grid-father article-father" id="project">
+      <div class="grid-son article-son">
+        <article>
+          <h2>Proyectos</h2>
+
+          <div class="main__project--card">
+            <div class="project__card">
+              <img src="./public/img/project/pokedex-2.0.png"/>
+              <div class="project__card--body">
+                <h3>Pokedex 2.0</h3>
+                <p>Aplicación de una Pokedex con React donde puedes buscar pokemones y ver toda su información</p>
+              </div>
+              <a class="button-project">ver</a>
+            </div>
+
+            <div class="project__card">
+              <img src="./public/img/project/rick-morty.png"/>
+              <div class="project__card--body">
+                <h3>Rick y Morty</h3>
+                <p>Aplicación de Rick y Morty con React donde puedes buscar los personajes, localizaciones y episodios</p>
+              </div>
+              <a class="button-project" href="https://rick-morty-react-js.vercel.app/">ver</a>
+            </div>
+
+            <div class="project__card">
+              <img src="./public/img/project/pokedex.png"/>
+              <div class="project__card--body">
+                <h3>Pokedex</h3>
+                <p>Mi primera aplicación de una Pokedex con JavaScript puro donde puedes buscar pokemones y ver toda su información con scroll infinito</p>
+              </div>
+              <a class="button-project" href="./src/projects/pokedexJS/index.html">ver</a>
+            </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="grid-father skills-father" id="skills">
       <div class="grid-son skills-son">
         <h2>Habilidades</h2>
 
         <div class="main__skills--card-learned">
           <h3>Habilidades adquiridas</h3>
-          <div class="skills__card">
+          <div class="skill">
+ <div class="skills__card">
             <img src="./public/img/skills/html-5.png" alt="" />
             <p>HTML 5</p>
           </div>
@@ -113,27 +155,32 @@
             <p>React JS</p>
           </div>
 
-          <div class="skills__card py">
-            <img src="./public/img/skills/python.png" alt="" />
-            <p>Python 3</p>
-          </div>
-        </div>
-
-        <div class="main__skills--card-learning">
-          <h3>Habilidades por adquirir</h3>
           <div class="skills__card">
             <img src="./public/img/skills/typescript.png" alt="" />
             <p>Typescript</p>
           </div>
 
-          <div class="skills__card">
-            <img src="./public/img/skills/node.png" alt="" />
-            <p>Node.js</p>
+          <div class="skills__card py">
+            <img src="./public/img/skills/python.png" alt="" />
+            <p>Python 3</p>
           </div>
 
-          <div class="skills__card">
-            <img src="./public/img/skills/blockchain.png" alt="" />
-            <p>Web 3.0</p>
+          </div>
+        </div>
+
+        <div class="main__skills--card-learning">
+          <h3>Habilidades por adquirir</h3>
+
+          <div class="skill">
+            <div class="skills__card">
+              <img src="./public/img/skills/node.png" alt="" />
+              <p>Node.js</p>
+            </div>
+
+            <div class="skills__card">
+              <img src="./public/img/skills/blockchain.png" alt="" />
+              <p>Web 3.0</p>
+            </div>
           </div>
         </div>
       </div>
