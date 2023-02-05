@@ -1,13 +1,9 @@
-.article-son {
-  margin: 60px 0;
-}
-
 .article-son h2 {
   text-align: center;
 }
 
 .main__project--card {
-  margin: 60px 0;
+  margin-top: 40px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -17,6 +13,7 @@
     grid-gap: 20px;
     background-color: $bgColorSecundary;
     border-radius: 5px;
+    box-shadow: 4px 4px 20px #b8b8b8;
     img {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -25,22 +22,23 @@
 
     .project__card--body {
       margin-top: 10px;
+      padding: 0 15px;
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
 
     .button-project {
-      background-color: $colorPrimary;
+      background-color: $btncolorPrimary;
+      color: $bgColorPrimary;
       border: none;
-      color: $colorText;
       padding: 5px;
       font-weight: bold;
       border-radius: 3px;
       text-align: center;
       cursor: pointer;
       text-decoration: none;
-      transition: 0.3s ease-in-out;
+      transition: 0.2s ease-in-out;
     }
 
     .button-project:hover {
@@ -64,7 +62,8 @@
 
 @media screen and (min-width: 1271px) {
   .main__project--card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
