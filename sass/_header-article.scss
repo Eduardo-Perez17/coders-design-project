@@ -11,8 +11,13 @@
 }
 
 .header__article--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px $bgColorSecundary;
   }
 }
 
