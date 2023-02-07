@@ -163,6 +163,9 @@ nav ul li a {
       display: flex;
       flex-direction: column;
       gap: 8px; }
+      .main__project--card .project__card .project__card--body span {
+        color: #00000052;
+        font-weight: bold; }
     .main__project--card .project__card .button-project {
       background-color: #3086fa;
       color: #fff;
