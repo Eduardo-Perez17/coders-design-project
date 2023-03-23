@@ -1,3 +1,7 @@
+.main__skills--card-learning .skill .next {
+  padding: 17px;
+}
+
 .skills-father {
   margin: 80px 0;
 }
@@ -19,11 +23,16 @@
 }
 
 .skills__card {
+  max-width: 380px;
   padding: 13px 17px;
   border-radius: 8px;
   border: 2px solid $borderColor;
   transition: 0.2s ease-in-out;
   @include mainAlign(flex, start, center);
+
+  img {
+    width: 32px;
+  }
 }
 
 .skills__card p {

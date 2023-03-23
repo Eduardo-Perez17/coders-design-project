@@ -9,6 +9,7 @@
   align-items: center;
   grid-gap: 60px;
   .project__card {
+    min-height: 455px;
     display: grid;
     grid-gap: 20px;
     background-color: $bgColorSecundary;
@@ -34,6 +35,9 @@
     }
 
     .button-project {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: $btncolorPrimary;
       color: $bgColorPrimary;
       border: none;
@@ -70,5 +74,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
