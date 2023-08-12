@@ -6,6 +6,7 @@
   margin: 80px 0;
 }
 
+
 .skills-son {
   text-align: center;
 }
@@ -78,5 +79,11 @@
   .skill {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.typeorm {
+  img {
+    width: 64px;
   }
 }
