@@ -11,6 +11,7 @@
   <title>Coders Design - Portafolio Web</title>
 </head>
 
+
 <body>
   <div class="grid-father header__father" id="initial">
     <div class="grid-son header__son">
@@ -46,7 +47,7 @@
     <div class="grid-son header__article--son">
       <div class="header__article">
         <div class="header__article--img">
-          <!-- <img src="./public/img/foto-profile-web.png" alt="imagen del desarrollador" /> -->
+          <img src="./public/img/photo_profile.jpg" alt="imagen del desarrollador" />
         </div>
 
         <div class="header__article--text">
@@ -58,7 +59,7 @@
           <div class="header__article--text-article">
             <p>Este es mi portafolio web, donde encontrara varios de mis proyectos personales con los que me siento
               orgulloso para enseñar al público y donde también encontrara mi curriculum.</p>
-            <a href='./public/curriculum-eduardo-perez.pdf' target="_blank">ver mi curriculum</a>
+            <a href='https://drive.google.com/file/d/1dSsT8QyRqm485XIb1s0lJIwC52xz0Shw/view?usp=sharing' target="_blank">ver mi curriculum</a>
           </div>
         </div>
       </div>
@@ -242,8 +243,21 @@
     </div>
   </div>
 
+
   <link rel="stylesheet" href="./css/index.css" />
   <script src="./src/scripts/index.js"></script>
+  
+  <style>
+    body {
+      .header__article--img {
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  </style>
+  
+
 </body>
 
 </html>
